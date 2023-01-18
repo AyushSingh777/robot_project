@@ -1,0 +1,27 @@
+1673951628477	geckodriver	INFO	Listening on 127.0.0.1:61292
+1673951631548	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61293" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40032482\\AppData\\Local\\Temp\\rust_mozprofile9V6S4U"
+1673951632212	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\40032482\\AppData\\Local\\Temp\\rust_mozprofile9V6S4U\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61293/devtools/browser/a5943c5f-0240-4a14-b7a1-48c5f720cbec
+1673951636334	Marionette	INFO	Listening on port 61347
+Read port: 61347
+1673951636410	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.medibuddy.in/require.js, line 1: Error: Load timeout for modules: medMain
+http://requirejs.org/docs/errors.html#timeout
+1673951673210	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1673951674149	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1673951674903	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1673951686404	Marionette	INFO	Stopped listening on port 61347
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

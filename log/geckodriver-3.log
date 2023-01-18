@@ -1,0 +1,20 @@
+1673951629068	geckodriver	INFO	Listening on 127.0.0.1:61299
+1673951632100	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61300" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40032482\\AppData\\Local\\Temp\\rust_mozprofileEMeuYP"
+1673951632761	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\40032482\\AppData\\Local\\Temp\\rust_mozprofileEMeuYP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61300/devtools/browser/a00bae33-9027-4a61-859c-2041fa4f225d
+1673951636151	Marionette	INFO	Listening on port 61344
+Read port: 61344
+1673951636280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1673951661171	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.medibuddy.in"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.medibuddy.in"
+1673951724010	Marionette	INFO	Stopped listening on port 61344
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

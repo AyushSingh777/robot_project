@@ -1,0 +1,45 @@
+1674021850948	geckodriver	INFO	Listening on 127.0.0.1:55650
+1674021854050	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55651" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\40032482\\AppData\\Local\\Temp\\rust_mozprofile3t0bi7"
+1674021855034	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\40032482\\AppData\\Local\\Temp\\rust_mozprofile3t0bi7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55651/devtools/browser/5d60e597-77c4-4d64-8a7c-2779e74c7578
+1674021857425	Marionette	INFO	Listening on port 55674
+Read port: 55674
+1674021857513	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://netbanking.hdfcbank.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://netbanking.hdfcbank.com"
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/portal_view.js?v=null, line 5: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/portal_view.js?v=null, line 5: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/portal_view.js?v=null, line 5: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/portal_view.js?v=null, line 5: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/xml-lang/backbase.com.2013/backbase.com.2013.js, line 1: unreachable code after return statement
+JavaScript error: https://netportal.hdfcbank.com/static/features/%5BBBHOST%5D/feature-hdfc-product-detail-service/scripts/feature-hdfc-product-detail-service.js, line 115: TypeError: i is undefined
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/client.js?v=null, line 1: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/portal_view.js?v=null, line 5: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/portal_view.js?v=null, line 5: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/portal_view.js?v=null, line 5: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/portal_view.js?v=null, line 5: unreachable code after return statement
+JavaScript warning: https://netportal.hdfcbank.com/static/portalclient/xml-lang/backbase.com.2013/backbase.com.2013.js, line 1: unreachable code after return statement
+JavaScript error: https://netportal.hdfcbank.com/static/features/%5BBBHOST%5D/feature-hdfc-product-detail-service/scripts/feature-hdfc-product-detail-service.js, line 115: TypeError: i is undefined
+1674021943213	Marionette	INFO	Stopped listening on port 55674
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
