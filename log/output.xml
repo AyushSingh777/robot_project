@@ -1,49 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230119 11:12:27.384" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo10 Actions" source="C:\Users\40032482\robot_project\selenium_suite\demo10_actions.robot">
-<test id="s1-t1" name="TC2" line="20">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230119 11:12:27.659" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20230119 11:12:27.659" endtime="20230119 11:12:29.854"/>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230119 14:17:11.176" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo3" source="C:\Users\40032482\robot_project\robot_suite\demo3.robot">
+<test id="s1-t1" name="TC8" line="61">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${MY_DETAILS}[mobile]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 14:17:11.221" endtime="20230119 14:17:11.221"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230119 11:12:29.855" endtime="20230119 11:12:29.974"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>20s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230119 11:12:29.974" endtime="20230119 11:12:29.979"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=https://nasscom.in</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230119 11:12:29.982" level="INFO">Opening url 'https://nasscom.in'</msg>
-<status status="PASS" starttime="20230119 11:12:29.981" endtime="20230119 11:12:52.178"/>
-</kw>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${ele}</var>
-<arg>xpath=//a[text()='Members Listing']</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20230119 11:12:52.194" level="INFO">${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session="80052bee358749f54ec33b417177c87f", element="43811cf4-b18a-4a76-945d-2548ae33a62a")&gt;</msg>
-<status status="PASS" starttime="20230119 11:12:52.178" endtime="20230119 11:12:52.194"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>arguments[0].click()</arg>
-<arg>ARGUMENTS</arg>
-<arg>${ele}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230119 11:12:52.196" level="INFO">Executing JavaScript:
-arguments[0].click()
-By using argument:
-'&lt;selenium.webdriver.remote.webelement.WebElement (session="80052bee358749f54ec33b417177c87f", element="43811cf4-b18a-4a76-945d-2548ae33a62a")&gt;'</msg>
-<status status="PASS" starttime="20230119 11:12:52.194" endtime="20230119 11:12:53.900"/>
-</kw>
-<status status="PASS" starttime="20230119 11:12:27.659" endtime="20230119 11:12:53.901"/>
+<status status="PASS" starttime="20230119 14:17:11.205" endtime="20230119 14:17:11.221"/>
 </test>
-<status status="PASS" starttime="20230119 11:12:27.390" endtime="20230119 11:12:53.902"/>
+<status status="PASS" starttime="20230119 14:17:11.182" endtime="20230119 14:17:11.221"/>
 </suite>
 <statistics>
 <total>
@@ -52,7 +18,7 @@ By using argument:
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo10 Actions">Demo10 Actions</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo3">Demo3</stat>
 </suite>
 </statistics>
 <errors>
