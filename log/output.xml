@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230119 14:17:11.176" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo3" source="C:\Users\40032482\robot_project\robot_suite\demo3.robot">
-<test id="s1-t1" name="TC8" line="61">
-<kw name="Log To Console" library="BuiltIn">
-<arg>${MY_DETAILS}[mobile]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230119 14:17:11.221" endtime="20230119 14:17:11.221"/>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230119 15:12:21.699" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo5" source="C:\Users\40032482\robot_project\robot_suite\demo5.robot">
+<test id="s1-t1" name="TC5" line="32">
+<kw name="Set Variable" library="BuiltIn">
+<var>${num1}</var>
+<arg>$200,100</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230119 15:12:21.750" level="INFO">${num1} = $200,100</msg>
+<status status="PASS" starttime="20230119 15:12:21.750" endtime="20230119 15:12:21.750"/>
 </kw>
-<status status="PASS" starttime="20230119 14:17:11.205" endtime="20230119 14:17:11.221"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${num2}</var>
+<arg>$200</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230119 15:12:21.750" level="INFO">${num2} = $200</msg>
+<status status="PASS" starttime="20230119 15:12:21.750" endtime="20230119 15:12:21.750"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${final_num1}</var>
+<arg>${num1}</arg>
+<arg>$</arg>
+<arg>,</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20230119 15:12:21.750" level="INFO">${final_num1} = 200100</msg>
+<status status="PASS" starttime="20230119 15:12:21.750" endtime="20230119 15:12:21.750"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${final_num2}</var>
+<arg>${num2}</arg>
+<arg>$</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20230119 15:12:21.750" level="INFO">${final_num2} = 200</msg>
+<status status="PASS" starttime="20230119 15:12:21.750" endtime="20230119 15:12:21.750"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${final_num1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 15:12:21.750" endtime="20230119 15:12:21.750"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${final_num2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 15:12:21.750" endtime="20230119 15:12:21.750"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${sum}</var>
+<arg>${final_num1}+${final_num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230119 15:12:21.750" level="INFO">${sum} = 200300</msg>
+<status status="PASS" starttime="20230119 15:12:21.750" endtime="20230119 15:12:21.750"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sum}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 15:12:21.766" endtime="20230119 15:12:21.766"/>
+</kw>
+<status status="PASS" starttime="20230119 15:12:21.750" endtime="20230119 15:12:21.766"/>
 </test>
-<status status="PASS" starttime="20230119 14:17:11.182" endtime="20230119 14:17:11.221"/>
+<status status="PASS" starttime="20230119 15:12:21.710" endtime="20230119 15:12:21.766"/>
 </suite>
 <statistics>
 <total>
@@ -18,7 +66,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo3">Demo3</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo5">Demo5</stat>
 </suite>
 </statistics>
 <errors>
