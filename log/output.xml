@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230120 17:24:39.432" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo1 App Launch" source="C:\Users\40032482\robot_project\appium_suite\demo1_app_launch.robot">
-<test id="s1-t1" name="TC2" line="18">
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230121 16:23:20.797" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo2 Android Native App" source="C:\Users\40032482\robot_project\appium_suite\demo2_android_native_app.robot">
+<test id="s1-t1" name="TC1 Sign Up" line="5">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>remote_url=http://localhost:4723/wd/hub</arg>
 <arg>platformName=android</arg>
@@ -14,132 +14,288 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20230120 17:24:39.784" endtime="20230120 17:24:52.196"/>
+<status status="PASS" starttime="20230121 16:23:21.198" endtime="20230121 16:23:35.960"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>xpath=//*[@text='Dismiss']</arg>
 <arg>30s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230120 17:24:55.630" level="INFO">xpath criteria: //*[@text='Dismiss']
-xpath criteria: //*[@text='Dismiss']
+<msg timestamp="20230121 16:23:39.984" level="INFO">xpath criteria: //*[@text='Dismiss']
 xpath criteria: //*[@text='Dismiss']</msg>
-<status status="PASS" starttime="20230120 17:24:52.197" endtime="20230120 17:24:55.630"/>
+<status status="PASS" starttime="20230121 16:23:35.960" endtime="20230121 16:23:39.984"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>xpath=//*[@text='Dismiss']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230120 17:24:55.630" level="INFO">Clicking element 'xpath=//*[@text='Dismiss']'.</msg>
-<msg timestamp="20230120 17:24:55.726" level="INFO">xpath criteria: //*[@text='Dismiss']</msg>
-<status status="PASS" starttime="20230120 17:24:55.630" endtime="20230120 17:24:55.726"/>
+<msg timestamp="20230121 16:23:39.984" level="INFO">Clicking element 'xpath=//*[@text='Dismiss']'.</msg>
+<msg timestamp="20230121 16:23:40.068" level="INFO">xpath criteria: //*[@text='Dismiss']</msg>
+<status status="PASS" starttime="20230121 16:23:39.984" endtime="20230121 16:23:40.068"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Settings"]</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230121 16:23:41.223" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Settings"]</msg>
+<status status="PASS" starttime="20230121 16:23:40.068" endtime="20230121 16:23:41.223"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Settings"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230121 16:23:41.223" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Settings"]'.</msg>
+<msg timestamp="20230121 16:23:42.843" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Settings"]</msg>
+<status status="PASS" starttime="20230121 16:23:41.223" endtime="20230121 16:23:42.843"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.TextView[@text='Sign in']</arg>
 <arg>30s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230120 17:24:56.861" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign in']</msg>
-<status status="PASS" starttime="20230120 17:24:55.726" endtime="20230120 17:24:56.861"/>
+<msg timestamp="20230121 16:23:52.346" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']
+xpath criteria: //android.widget.TextView[@text='Sign in']</msg>
+<status status="PASS" starttime="20230121 16:23:42.843" endtime="20230121 16:23:52.346"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.TextView[@text='Sign in']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230120 17:24:56.861" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Sign in']'.</msg>
-<msg timestamp="20230120 17:24:56.978" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign in']</msg>
-<status status="PASS" starttime="20230120 17:24:56.861" endtime="20230120 17:24:56.981"/>
+<msg timestamp="20230121 16:23:52.346" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Sign in']'.</msg>
+<msg timestamp="20230121 16:23:52.491" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign in']</msg>
+<status status="PASS" starttime="20230121 16:23:52.346" endtime="20230121 16:23:52.491"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[@text='Sign in']</arg>
+<arg>xpath=//android.widget.TextView[@text='Sign up with email']</arg>
 <arg>30s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230120 17:24:57.685" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign in']</msg>
-<status status="PASS" starttime="20230120 17:24:56.981" endtime="20230120 17:24:57.685"/>
+<msg timestamp="20230121 16:23:53.176" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign up with email']
+xpath criteria: //android.widget.TextView[@text='Sign up with email']</msg>
+<status status="PASS" starttime="20230121 16:23:52.491" endtime="20230121 16:23:53.176"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[@text='Sign in']</arg>
+<arg>xpath=//android.widget.TextView[@text='Sign up with email']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230120 17:24:57.685" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Sign in']'.</msg>
-<msg timestamp="20230120 17:24:57.816" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign in']</msg>
-<status status="PASS" starttime="20230120 17:24:57.685" endtime="20230120 17:24:57.816"/>
+<msg timestamp="20230121 16:23:53.176" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Sign up with email']'.</msg>
+<msg timestamp="20230121 16:23:53.298" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign up with email']</msg>
+<status status="PASS" starttime="20230121 16:23:53.176" endtime="20230121 16:23:53.298"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Enter an e-mail address or username']</arg>
+<arg>xpath=//android.widget.EditText[@text='First name']</arg>
 <arg>30s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230120 17:24:58.570" level="INFO">xpath criteria: //android.widget.EditText[@text='Enter an e-mail address or username']</msg>
-<status status="PASS" starttime="20230120 17:24:57.816" endtime="20230120 17:24:58.570"/>
+<msg timestamp="20230121 16:23:54.078" level="INFO">xpath criteria: //android.widget.EditText[@text='First name']
+xpath criteria: //android.widget.EditText[@text='First name']</msg>
+<status status="PASS" starttime="20230121 16:23:53.298" endtime="20230121 16:23:54.078"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Enter an e-mail address or username']</arg>
+<arg>xpath=//android.widget.EditText[@text='First name']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230120 17:24:58.570" level="INFO">Clicking element 'xpath=//android.widget.EditText[@text='Enter an e-mail address or username']'.</msg>
-<msg timestamp="20230120 17:24:58.697" level="INFO">xpath criteria: //android.widget.EditText[@text='Enter an e-mail address or username']</msg>
-<status status="PASS" starttime="20230120 17:24:58.570" endtime="20230120 17:24:58.697"/>
+<msg timestamp="20230121 16:23:54.078" level="INFO">Clicking element 'xpath=//android.widget.EditText[@text='First name']'.</msg>
+<msg timestamp="20230121 16:23:54.178" level="INFO">xpath criteria: //android.widget.EditText[@text='First name']</msg>
+<status status="PASS" starttime="20230121 16:23:54.078" endtime="20230121 16:23:54.178"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Enter an e-mail address or username']</arg>
-<arg>ayush</arg>
+<arg>xpath=//android.widget.EditText[@text='First name']</arg>
+<arg>Ayush</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230120 17:24:58.701" level="INFO">Typing text 'ayush' into text field 'xpath=//android.widget.EditText[@text='Enter an e-mail address or username']'</msg>
-<msg timestamp="20230120 17:25:00.382" level="INFO">xpath criteria: //android.widget.EditText[@text='Enter an e-mail address or username']</msg>
-<status status="PASS" starttime="20230120 17:24:58.699" endtime="20230120 17:25:00.382"/>
+<msg timestamp="20230121 16:23:54.178" level="INFO">Typing text 'Ayush' into text field 'xpath=//android.widget.EditText[@text='First name']'</msg>
+<msg timestamp="20230121 16:23:56.043" level="INFO">xpath criteria: //android.widget.EditText[@text='First name']</msg>
+<status status="PASS" starttime="20230121 16:23:54.178" endtime="20230121 16:23:56.043"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@text='Last name']</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230121 16:23:56.982" level="INFO">xpath criteria: //android.widget.EditText[@text='Last name']</msg>
+<status status="PASS" starttime="20230121 16:23:56.043" endtime="20230121 16:23:56.982"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Password']</arg>
+<arg>xpath=//android.widget.EditText[@text='Last name']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230120 17:25:00.382" level="INFO">Clicking element 'xpath=//android.widget.EditText[@text='Password']'.</msg>
-<msg timestamp="20230120 17:25:01.768" level="INFO">xpath criteria: //android.widget.EditText[@text='Password']</msg>
-<status status="PASS" starttime="20230120 17:25:00.382" endtime="20230120 17:25:01.768"/>
+<msg timestamp="20230121 16:23:56.982" level="INFO">Clicking element 'xpath=//android.widget.EditText[@text='Last name']'.</msg>
+<msg timestamp="20230121 16:23:57.129" level="INFO">xpath criteria: //android.widget.EditText[@text='Last name']</msg>
+<status status="PASS" starttime="20230121 16:23:56.982" endtime="20230121 16:23:57.129"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
-<arg>xpath=//android.widget.EditText[@text='Password']</arg>
+<arg>xpath=//android.widget.EditText[@text='Last name']</arg>
+<arg>Pratap</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230121 16:23:57.129" level="INFO">Typing text 'Pratap' into text field 'xpath=//android.widget.EditText[@text='Last name']'</msg>
+<msg timestamp="20230121 16:23:58.554" level="INFO">xpath criteria: //android.widget.EditText[@text='Last name']</msg>
+<status status="PASS" starttime="20230121 16:23:57.129" endtime="20230121 16:23:58.554"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.TextView[@text='Birthday']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230121 16:23:59.434" level="INFO">xpath criteria: //android.widget.TextView[@text='Birthday']</msg>
+<status status="PASS" starttime="20230121 16:23:58.554" endtime="20230121 16:23:59.434"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.TextView[@text='Birthday']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230121 16:23:59.434" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Birthday']'.</msg>
+<msg timestamp="20230121 16:23:59.587" level="INFO">xpath criteria: //android.widget.TextView[@text='Birthday']</msg>
+<status status="PASS" starttime="20230121 16:23:59.434" endtime="20230121 16:23:59.587"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230121 16:24:01.697" level="INFO">xpath criteria: //android.widget.EditText[@resource-id='android:id/numberpicker_input']
+xpath criteria: //android.widget.EditText[@resource-id='android:id/numberpicker_input']</msg>
+<status status="PASS" starttime="20230121 16:23:59.587" endtime="20230121 16:24:01.697"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:01.697" level="INFO">Clicking element 'xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']'.</msg>
+<msg timestamp="20230121 16:24:03.125" level="INFO">xpath criteria: //android.widget.EditText[@resource-id='android:id/numberpicker_input']</msg>
+<status status="PASS" starttime="20230121 16:24:01.697" endtime="20230121 16:24:03.125"/>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:03.125" level="INFO">Clear text field 'xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']'</msg>
+<msg timestamp="20230121 16:24:03.241" level="INFO">xpath criteria: //android.widget.EditText[@resource-id='android:id/numberpicker_input']</msg>
+<status status="PASS" starttime="20230121 16:24:03.125" endtime="20230121 16:24:03.241"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']</arg>
+<arg>Dec</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:03.241" level="INFO">Typing text 'Dec' into text field 'xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']'</msg>
+<msg timestamp="20230121 16:24:03.992" level="INFO">xpath criteria: //android.widget.EditText[@resource-id='android:id/numberpicker_input']</msg>
+<status status="PASS" starttime="20230121 16:24:03.241" endtime="20230121 16:24:03.992"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230121 16:24:04.898" level="INFO">xpath criteria: (//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]</msg>
+<status status="PASS" starttime="20230121 16:24:03.992" endtime="20230121 16:24:04.898"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:04.898" level="INFO">Clicking element 'xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]'.</msg>
+<msg timestamp="20230121 16:24:05.884" level="INFO">xpath criteria: (//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]</msg>
+<status status="PASS" starttime="20230121 16:24:04.898" endtime="20230121 16:24:05.884"/>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<arg>xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:05.884" level="INFO">Clear text field 'xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]'</msg>
+<msg timestamp="20230121 16:24:06.053" level="INFO">xpath criteria: (//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]</msg>
+<status status="PASS" starttime="20230121 16:24:05.884" endtime="20230121 16:24:06.069"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]</arg>
+<arg>23</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:06.069" level="INFO">Typing text '23' into text field 'xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]'</msg>
+<msg timestamp="20230121 16:24:06.823" level="INFO">xpath criteria: (//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]</msg>
+<status status="PASS" starttime="20230121 16:24:06.069" endtime="20230121 16:24:06.823"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230121 16:24:07.518" level="INFO">xpath criteria: (//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]</msg>
+<status status="PASS" starttime="20230121 16:24:06.823" endtime="20230121 16:24:07.518"/>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<arg>xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:07.518" level="INFO">Clear text field 'xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]'</msg>
+<msg timestamp="20230121 16:24:07.634" level="INFO">xpath criteria: (//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]</msg>
+<status status="PASS" starttime="20230121 16:24:07.518" endtime="20230121 16:24:07.634"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:07.634" level="INFO">Clicking element 'xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]'.</msg>
+<msg timestamp="20230121 16:24:09.067" level="INFO">xpath criteria: (//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]</msg>
+<status status="PASS" starttime="20230121 16:24:07.634" endtime="20230121 16:24:09.067"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]</arg>
+<arg>2010</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:09.067" level="INFO">Typing text '2010' into text field 'xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]'</msg>
+<msg timestamp="20230121 16:24:09.189" level="INFO">xpath criteria: (//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]</msg>
+<status status="PASS" starttime="20230121 16:24:09.067" endtime="20230121 16:24:09.189"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=(//android.widget.Button[@resource-id='android:id/button1'])</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:09.189" level="INFO">Clicking element 'xpath=(//android.widget.Button[@resource-id='android:id/button1'])'.</msg>
+<msg timestamp="20230121 16:24:09.937" level="INFO">xpath criteria: (//android.widget.Button[@resource-id='android:id/button1'])</msg>
+<status status="PASS" starttime="20230121 16:24:09.189" endtime="20230121 16:24:09.937"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@content-desc='Email address']</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230121 16:24:10.344" level="INFO">xpath criteria: //android.widget.EditText[@content-desc='Email address']</msg>
+<status status="PASS" starttime="20230121 16:24:09.937" endtime="20230121 16:24:10.344"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@content-desc='Email address']</arg>
+<arg>ayush123@gmail.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230121 16:24:10.344" level="INFO">Typing text 'ayush123@gmail.com' into text field 'xpath=//android.widget.EditText[@content-desc='Email address']'</msg>
+<msg timestamp="20230121 16:24:11.192" level="INFO">xpath criteria: //android.widget.EditText[@content-desc='Email address']</msg>
+<status status="PASS" starttime="20230121 16:24:10.344" endtime="20230121 16:24:11.192"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@content-desc='Password']</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230121 16:24:30.847" level="INFO">xpath criteria: //android.widget.EditText[@content-desc='Password']</msg>
+<status status="PASS" starttime="20230121 16:24:11.192" endtime="20230121 16:24:30.847"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@content-desc='Password']</arg>
 <arg>123456</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230120 17:25:01.783" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@text='Password']'</msg>
-<msg timestamp="20230120 17:25:03.114" level="INFO">xpath criteria: //android.widget.EditText[@text='Password']</msg>
-<status status="PASS" starttime="20230120 17:25:01.768" endtime="20230120 17:25:03.114"/>
+<msg timestamp="20230121 16:24:30.863" level="INFO">Typing text '123456' into text field 'xpath=//android.widget.EditText[@content-desc='Password']'</msg>
+<msg timestamp="20230121 16:24:32.634" level="INFO">xpath criteria: //android.widget.EditText[@content-desc='Password']</msg>
+<status status="PASS" starttime="20230121 16:24:30.847" endtime="20230121 16:24:32.634"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@content-desc="Sign in"]</arg>
-<arg>30s</arg>
+<arg>xpath=(//android.widget.TextView[@text='CREATE'])</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230120 17:25:03.808" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Sign in"]</msg>
-<status status="PASS" starttime="20230120 17:25:03.114" endtime="20230120 17:25:03.808"/>
+<msg timestamp="20230121 16:24:33.505" level="INFO">xpath criteria: (//android.widget.TextView[@text='CREATE'])</msg>
+<status status="PASS" starttime="20230121 16:24:32.634" endtime="20230121 16:24:33.505"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@content-desc="Sign in"]</arg>
+<arg>xpath=(//android.widget.TextView[@text='CREATE'])</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230120 17:25:03.808" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Sign in"]'.</msg>
-<msg timestamp="20230120 17:25:03.931" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Sign in"]</msg>
-<status status="PASS" starttime="20230120 17:25:03.808" endtime="20230120 17:25:03.931"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[@text='There was an issue signing in']</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230120 17:25:05.540" level="INFO">xpath criteria: //android.widget.TextView[@text='There was an issue signing in']
-xpath criteria: //android.widget.TextView[@text='There was an issue signing in']
-xpath criteria: //android.widget.TextView[@text='There was an issue signing in']</msg>
-<status status="PASS" starttime="20230120 17:25:03.931" endtime="20230120 17:25:05.540"/>
-</kw>
-<kw name="Element Should Contain Text" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[@text='There was an issue signing in']</arg>
-<arg>There was an issue signing in</arg>
-<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20230120 17:25:05.540" level="INFO">Verifying element 'xpath=//android.widget.TextView[@text='There was an issue signing in']' contains text 'There was an issue signing in'.</msg>
-<msg timestamp="20230120 17:25:05.657" level="INFO">xpath criteria: //android.widget.TextView[@text='There was an issue signing in']</msg>
-<status status="PASS" starttime="20230120 17:25:05.540" endtime="20230120 17:25:05.657"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230120 17:25:10.669" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230120 17:25:05.657" endtime="20230120 17:25:10.669"/>
+<msg timestamp="20230121 16:24:33.505" level="INFO">Clicking element 'xpath=(//android.widget.TextView[@text='CREATE'])'.</msg>
+<msg timestamp="20230121 16:24:40.072" level="INFO">xpath criteria: (//android.widget.TextView[@text='CREATE'])</msg>
+<status status="PASS" starttime="20230121 16:24:33.505" endtime="20230121 16:24:40.072"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20230120 17:25:10.669" endtime="20230120 17:25:11.421"/>
+<status status="PASS" starttime="20230121 16:24:40.072" endtime="20230121 16:24:41.135"/>
 </kw>
-<status status="PASS" starttime="20230120 17:24:39.784" endtime="20230120 17:25:11.422"/>
+<doc>Working with native app
+for automating sign up activity</doc>
+<status status="PASS" starttime="20230121 16:23:21.198" endtime="20230121 16:24:41.135"/>
 </test>
-<status status="PASS" starttime="20230120 17:24:39.444" endtime="20230120 17:25:11.424"/>
+<status status="PASS" starttime="20230121 16:23:20.797" endtime="20230121 16:24:41.135"/>
 </suite>
 <statistics>
 <total>
@@ -148,7 +304,7 @@ xpath criteria: //android.widget.TextView[@text='There was an issue signing in']
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo1 App Launch">Demo1 App Launch</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2 Android Native App">Demo2 Android Native App</stat>
 </suite>
 </statistics>
 <errors>
