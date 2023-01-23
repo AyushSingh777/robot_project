@@ -64,6 +64,30 @@ TC1 Sign Up
 
     [Teardown]  Close Application
 
+TC2
+     Open Application    remote_url=http://localhost:4723/wd/hub
+    ...     platformName=android
+    ...     deviceName=OnePlus Nord CE 2 Lite 5G
+    #...     browserName=chrome
+    ...     app=C:\\Users\\40032482\\Downloads\\khan-academy-7-3-2.apk
+    ...     appPackage=org.khanacademy.android
+    ...     appActivity=org.khanacademy.android.ui.library.MainActivity
+    ...     noReset=true
+    
+    #Wait Until Page Contains Element    xpath=//*[@text='Dismiss']     30s
+    #Click Element    xpath=//*[@text='Dismiss']
+
+    Wait Until Page Contains Element    xpath=//android.widget.Button[@text='Search']       30s
+    Click Element    xpath=//android.widget.Button[@text='Search']
+
+    Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Arts and humanities']     30s
+    Click Element    xpath=//android.widget.TextView[@text='Arts and humanities']
+
+
+
+
+
+
 
 
 
