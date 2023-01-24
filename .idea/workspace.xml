@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff15ff25-847a-4d53-9abe-8c5863ab5c68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/selenium_suite/demo12_open_emr.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appium_suite/demo4_uiselector.robot" beforeDir="false" afterPath="$PROJECT_DIR$/appium_suite/demo4_uiselector.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />
-    </list>
+    <list default="true" id="ff15ff25-847a-4d53-9abe-8c5863ab5c68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
