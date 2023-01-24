@@ -23,3 +23,10 @@ TC4
     Input Text      input_username   hello@gmail.com
     Input Password      input_password   welcome@123
     Click Element       input_go
+    
+TC5
+    Open Browser    browser=chrome
+    @{output}   Run Keyword And Ignore Error    Click Element    xpath=//a
+    Log To Console    ${output}
+    Log To Console    ${output}[0]
+    Log To Console    ${output}[1]

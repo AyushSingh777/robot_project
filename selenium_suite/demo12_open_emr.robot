@@ -32,7 +32,7 @@ TC1
     Log To Console      ${alert_text}
     Should Contain     ${alert_text}        New Due Clinical Reminders
 
-    Click Element    xpath=//div[@class='closeDlgIframe']
+    #Click Element    xpath=//div[@class='closeDlgIframe']
     Should Contain    xpath=//*[contains(text(),'Naveen Chaurasiya')]   Naveen Chaurasiya
 
     [Teardown]  Close Browser
