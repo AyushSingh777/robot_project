@@ -1,47 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230124 17:05:36.210" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo1" source="C:\Users\40032482\robot_project\selenium_suite\demo1.robot">
-<test id="s1-t1" name="TC5" line="27">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230124 17:05:36.560" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20230124 17:05:36.559" endtime="20230124 17:05:38.251"/>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230127 10:27:06.651" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo2" source="C:\Users\40032482\robot_project\api_suite\demo2.robot">
+<kw name="Create Session" library="RequestsLibrary" type="SETUP">
+<arg>alias=petshop</arg>
+<arg>url=https://petstore.swagger.io/v2</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230127 10:27:06.842" level="INFO">Creating Session using : alias=petshop, url=https://petstore.swagger.io/v2, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230127 10:27:06.842" endtime="20230127 10:27:06.842"/>
 </kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<var>@{output}</var>
-<arg>Click Element</arg>
-<arg>xpath=//a</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230124 17:05:38.257" level="INFO">Clicking element 'xpath=//a'.</msg>
-<msg timestamp="20230124 17:05:38.449" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-69.png"&gt;&lt;img src="selenium-screenshot-69.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230124 17:05:38.450" level="FAIL">Element with locator 'xpath=//a' not found.</msg>
-<status status="FAIL" starttime="20230124 17:05:38.255" endtime="20230124 17:05:38.454"/>
+<test id="s1-t1" name="TC3" line="16">
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>alias=petshop</arg>
+<arg>url=pet/findByStatus?status=sold</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20230127 10:27:08.625" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=sold 
+ path_url=/v2/pet/findByStatus?status=sold 
+ headers={'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230127 10:27:08.625" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=sold 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 27 Jan 2023 04:57:06 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body=[{"id":1122338506818,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":9223372016900013315,"name":"Charlie","photoUrls":[],"tags":[],"status":"sold"},{"id":15435006001660,"category":{"id":2432432,"name":"category_name"},"name":"5239423","photoUrls":["test URL"],"tags":[{"id":5,"name":"fact tag"}],"status":"sold"},{"id":9223372016900013376,"category":{"id":-12451059,"name":"pariatur"},"name":"doggie","photoUrls":["proident reprehenderit","aliqua nisi"],"tags":[{"id":-51074348,"name":"nisi nulla"},{"id":85662688,"name":"deserunt incididunt laboris"}],"status":"sold"},{"id":13,"category":{"id":0,"name":"cats"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9223372016900013961,"category":{"id":-41236579,"name":"proident eu"},"name":"doggie","photoUrls":["http://img2.joyreactor.cc/pics/post/%D0%BA%D1%80%D0%B0%D1%81%D0%B0%D0%B2%D0%B8%D1%86%D0%B0-%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0-2720769.jpeg"],"tags":[{"id":75889240,"name":"nostrud pariatur ullamco"},{"id":34200791,"name":"veniam incididunt do"}],"status":"sold"}] 
+ </msg>
+<msg timestamp="20230127 10:27:08.625" level="INFO">C:\Users\40032482\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py:1045: InsecureRequestWarning: Unverified HTTPS request is being made to host 'petstore.swagger.io'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20230127 10:27:08.625" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230127 10:27:06.850" endtime="20230127 10:27:08.625"/>
 </kw>
-<msg timestamp="20230124 17:05:38.454" level="INFO">@{output} = [ FAIL | Element with locator 'xpath=//a' not found. ]</msg>
-<status status="PASS" starttime="20230124 17:05:38.253" endtime="20230124 17:05:38.455"/>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20230127 10:27:08.625" endtime="20230127 10:27:08.625"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${output}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230124 17:05:38.455" endtime="20230124 17:05:38.455"/>
+<kw name="Log" library="BuiltIn">
+<arg>${response.json()}[0][id]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230127 10:27:08.625" level="INFO">1122338506818</msg>
+<status status="PASS" starttime="20230127 10:27:08.625" endtime="20230127 10:27:08.625"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${output}[0]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230124 17:05:38.456" endtime="20230124 17:05:38.456"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${output}[1]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230124 17:05:38.457" endtime="20230124 17:05:38.457"/>
-</kw>
-<status status="PASS" starttime="20230124 17:05:36.557" endtime="20230124 17:05:38.458"/>
+<status status="PASS" starttime="20230127 10:27:06.842" endtime="20230127 10:27:08.633"/>
 </test>
-<status status="PASS" starttime="20230124 17:05:36.213" endtime="20230124 17:05:38.459"/>
+<status status="PASS" starttime="20230127 10:27:06.655" endtime="20230127 10:27:08.633"/>
 </suite>
 <statistics>
 <total>
@@ -50,7 +51,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo1">Demo1</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2">Demo2</stat>
 </suite>
 </statistics>
 <errors>
