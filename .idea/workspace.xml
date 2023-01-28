@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff15ff25-847a-4d53-9abe-8c5863ab5c68" name="Changes" comment="ios native app, real device">
-      <change afterPath="$PROJECT_DIR$/api_suite/demo1.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_suite/demo2.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_suite/demo2.robot" beforeDir="false" afterPath="$PROJECT_DIR$/api_suite/demo2.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/report.html" afterDir="false" />

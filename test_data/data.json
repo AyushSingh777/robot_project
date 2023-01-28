@@ -1,0 +1,18 @@
+{
+  "id": 500199,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie-M",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
